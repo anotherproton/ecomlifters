@@ -3,8 +3,8 @@
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import hasPinContent from "@/lib/animation/hasPinContent";
-import { FaDribbble } from "react-icons/fa";
-import { FaBehance } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { ActionBtnType, TWorkType } from "@/types";
 import hasFadeAnim from "@/lib/animation/hasFadeAnim";
 import BranWorkCard from "./BranWorkCard";
@@ -52,27 +52,27 @@ const BrandingWork = ({
             >
               <div className="flex items-center gap-3">
                 <div className="icon border border-border w-10 h-10 rounded-[10px]  flex justify-center items-center text-[18px]">
-                  <FaDribbble className="text-text" />
+                  <FaTwitter className="text-text" />
                 </div>
                 <div className="leading-[1]">
                   <span className="text-[10px] uppercase leading-[1] inline-block font-medium text-text-4">
                     Follow
                   </span>
                   <h2 className="name text-[18px] leading-[1] font-medium mt-[5px]">
-                    Dribbble
+                    Twitter
                   </h2>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="icon border border-border w-10 h-10 rounded-[10px] flex justify-center items-center text-[18px]">
-                  <FaBehance className="text-text" />
+                  <FaInstagram className="text-text" />
                 </div>
                 <div className="leading-[1]">
                   <span className="text-[10px] uppercase leading-[1] inline-block font-medium text-text-4">
                     Follow
                   </span>
                   <h2 className="name text-[18px] leading-[1] font-medium mt-[5px]">
-                    Behance
+                    Instagram
                   </h2>
                 </div>
               </div>

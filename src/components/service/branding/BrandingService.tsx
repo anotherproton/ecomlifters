@@ -35,7 +35,7 @@ const BrandingService = ({ title, info, action_btn, services }: Props) => {
         <div className="main-section-spacing">
           <MainSectionTitle
             title={title}
-            className="max-w-[845px] text-text-fixed-2"
+            className="max-w-[845px] text-text-fixed-2 xl:!text-[45px] 2xl:!text-[55px]"
           />
           <div className="mt-[50px] xl:mt-[90px]">
             <div className="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">

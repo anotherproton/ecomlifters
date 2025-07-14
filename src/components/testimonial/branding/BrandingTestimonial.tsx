@@ -104,12 +104,7 @@ const BrandingTestimonial = ({
               handleNext={handleNext}
             />
           </div>
-          <div className="clients_area_inner py-[29px] mt-[60px] xl:py-[49px] border-t border-b xl:mt-20 2xl:mt-[100px]">
-            <ImageAutoSlider
-              slides={brands || []}
-              imageClassName="opacity-80"
-            />
-          </div>
+         
         </div>
       </div>
     </div>

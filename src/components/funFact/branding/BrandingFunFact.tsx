@@ -36,7 +36,10 @@ const BrandingFunFact = ({ title, shape1, shape2, value }: Props) => {
     >
       <div ref={containerRef} className="container">
         <div className="main-section-spacing">
-          <MainSectionTitle title={title} className="max-w-[840px]" />
+          <MainSectionTitle 
+            title={title} 
+            className="max-w-[840px] xl:!text-[45px] 2xl:!text-[55px]" 
+          />
           <div className="mt-[50px] xl:mt-[90px]">
             <div className="ms-auto overflow-hidden max-w-[1310px] flex items-center gap-[50px] sm:gap-[80px] md:gap-[120px] xl:gap-[220px]">
               <div className="has_image_reveal">

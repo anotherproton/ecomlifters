@@ -42,8 +42,8 @@ const BranAboutArea = ({ aboutData }: Props) => {
         </div>
         <div>
           <p
-            className="leading-none text-[24px] mt-0 md:text-[36px] lg:text-[40px] xl:text-[50px] xl:mt-[-17px]
-              2xl:text-[70px] 2xl:-mt-6 text-text-fixed has_text_mov_anim"
+            className="leading-none text-[24px] mt-0 md:text-[30px] lg:text-[30px] xl:text-[40px] xl:mt-[-17px]
+              2xl:text-[60px] 2xl:-mt-6 text-text-fixed has_text_mov_anim"
           >
             {description}
           </p>

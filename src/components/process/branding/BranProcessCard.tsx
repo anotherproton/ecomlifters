@@ -18,7 +18,7 @@ const BranProcessCard = ({ serial_no, icon, title }: ProcessProps) => {
       <span className=" text-[16px] text-[#7D8683] dark:text-text-fixed-3 inline-block ml-[30px]">{`Step - ${formatSerialNo(
         serial_no
       )}`}</span>
-      <div className="h-[90px] w-[90px] rounded-full bg-background-2 flex justify-center items-center mx-auto transform translate-y-1/2 outline outline-[15px] outline-[#D8E9E4] dark:outline-[#252525] mt-[44px] xl:mt-[144px] 2xl:mt-[244px]">
+      <div className="h-[90px] w-[90px] rounded-full bg-background-2 flex justify-center items-center mx-auto transform translate-y-1/2 outline outline-[15px] outline-[#D8E9E4] dark:outline-[#252525] mt-[34px] xl:mt-[44px] 2xl:mt-[44px]">
         <ImageComponent
           src={icon.light}
           darkSrc={icon.dark}
