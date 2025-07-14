@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -16,7 +16,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useDirection } from "@/context/app.context";
 
-const menuData = navigation.header;
+type MenuItem = {
+  id: number;
+  name: string;
+  path: string;
+  hasChildren?: boolean;
+  children?: MenuItem[];
+};
+
+const menuData: MenuItem[] = navigation.header;
 
 type Props = {
   textColor?: string;
@@ -28,15 +36,15 @@ const Menu = ({ textColor, className }: Props) => {
     null
   );
   const { direction } = useDirection();
-  let timeoutId: ReturnType<typeof setTimeout>;
+  const timeoutId = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const handleMouseEnter = (id: number) => {
-    clearTimeout(timeoutId);
+    if (timeoutId.current) clearTimeout(timeoutId.current);
     setHoveredChildMenuId(id);
   };
 
   const handleMouseLeave = () => {
-    timeoutId = setTimeout(() => {
+    timeoutId.current = setTimeout(() => {
       setHoveredChildMenuId(null);
     }, 200);
   };
@@ -64,7 +72,7 @@ const Menu = ({ textColor, className }: Props) => {
                         menu.id === 1 && "w-[500px] grid grid-cols-2"
                       )}
                     >
-                      {menu.children.map((childMenu, j) => (
+                      {menu.children.map((childMenu) => (
                         <NavigationMenuItem
                           key={childMenu.id}
                           className="px-[25px] relative  ease-in transition-all duration-300 transform hover:scale-105"
