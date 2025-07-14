@@ -6,7 +6,7 @@ type Props = {
 
 const BrandingImage = ({ image }: Props) => {
   return (
-    <div className="image_wrapper main-section-style !pb-0 overflow-hidden">
+    <div className="image_wrapper main-section-style !pb-0 overflow-hidden hidden md:block">
       <Image
         src={image}
         alt="branding-image"
