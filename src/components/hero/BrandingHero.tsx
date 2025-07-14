@@ -76,7 +76,7 @@ const BrandingHero = ({
             <div>
               <h1
                 className={cn(
-                  "has_char_anim branding-hero-title !font-getaway text-text-fixed uppercase !leading-[0.83] !font-normal text-[80px] mt-0 mb-0 sm:text-[80px] sm:mt-[-2px] sm:mb-[-14px] md:text-[130px] md:mt-[-2px] md:mb-[-10px] md:tracking-[-0.04em] xl:text-[170px] xl:mb-[-14px] 2xl:text-[300px] 2xl:mt-[-3px] 2xl:mb-[-25px]",
+                  "has_char_anim branding-hero-title !font-getaway text-text-fixed uppercase !leading-[0.83] !font-normal text-[60px] mt-0 mb-0 sm:text-[60px] sm:mt-[-2px] sm:mb-[-14px] md:text-[100px] md:mt-[-2px] md:mb-[-10px] md:tracking-[-0.04em] xl:text-[140px] xl:mb-[-14px] 2xl:text-[200px] 2xl:mt-[-3px] 2xl:mb-[-25px]",
                   layout === "box" &&
                     "xxl:text-[210px] 2xl:mt-0 2xl:mb-[-14px] 2xl:max-w-[900px]"
                 )}
@@ -85,10 +85,10 @@ const BrandingHero = ({
             </div>
 
             <div>
-              <div className="relative rounded-[30px] overflow-hidden inline-block">
+              <div className="relative rounded-[30px] overflow-hidden inline-block" style={{display:"none"}}>
                 <Image
-                  src="/assets/imgs/hero/branding/img-s-32.jpg"
-                  className="w-full h-full"
+                  src="/assets/imgs/hero/branding/img-s23.jpg"
+                  className="w-[60%] rounded-[30px] h-full "
                   width={435}
                   height={260}
                   alt="image"

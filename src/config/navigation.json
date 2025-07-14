@@ -2,190 +2,21 @@
   "header": [
     {
       "id": 1,
-      "name": "Demos",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "id": 1,
-          "name": "Branding Agency",
-          "path": "/branding"
-        },
-        {
-          "id": 2,
-          "name": "Web Agency",
-          "path": "/web"
-        },
-        {
-          "id": 3,
-          "name": "Seo Agency",
-          "path": "/seo"
-        },
-        {
-          "id": 4,
-          "name": "Design Agency",
-          "path": "/design"
-        },
-        {
-          "id": 5,
-          "name": "Video Agency",
-          "path": "/video"
-        },
-        {
-          "id": 6,
-          "name": "AI Agency",
-          "path": "/ai-agency"
-        },
-        {
-          "id": 7,
-          "name": "Marketing Agency",
-          "path": "/marketing"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "About",
+      "name": "About Us",
       "path": "/about"
     },
     {
+      "id": 2,
+      "name": "Services",
+      "path": "/service"
+    },
+    {
       "id": 3,
-      "name": "Portfolio",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "id": 1,
-          "name": "Portfolio Carousel",
-          "path": "/portfolio/carousel"
-        },
-        {
-          "id": 2,
-          "name": "Portfolio Material",
-          "path": "/portfolio/material"
-        },
-        {
-          "id": 3,
-          "name": "Portfolio Slicer",
-          "path": "/portfolio/slicer"
-        },
-        {
-          "id": 4,
-          "name": "Portfolio Spring",
-          "path": "/portfolio/spring"
-        }
-      ]
+      "name": "Projects",
+      "path": "/work"
     },
     {
       "id": 4,
-      "name": "Pages",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "id": 1,
-          "name": "Service Pages",
-          "path": "#",
-          "hasChildren": true,
-          "children": [
-            {
-              "id": 1,
-              "name": "Services",
-              "path": "/service"
-            },
-            {
-              "id": 2,
-              "name": "Service Details",
-              "path": "/service/interaction-design"
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "name": "Project Pages",
-          "path": "#",
-          "hasChildren": true,
-          "children": [
-            {
-              "id": 1,
-              "name": "Project",
-              "path": "/work"
-            },
-            {
-              "id": 2,
-              "name": "Project Details",
-              "path": "/work/victoria_kinko"
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "name": "Team Pages",
-          "path": "#",
-          "hasChildren": true,
-          "children": [
-            {
-              "id": 1,
-              "name": "Team",
-              "path": "/team"
-            },
-            {
-              "id": 2,
-              "name": "Team Details",
-              "path": "/team/kamal-abraham"
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "name": "Career Pages",
-          "path": "#",
-          "hasChildren": true,
-          "children": [
-            {
-              "id": 1,
-              "name": "Career",
-              "path": "/career"
-            },
-            {
-              "id": 2,
-              "name": "Career Details",
-              "path": "/career/frontend-developer"
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "name": "Faq",
-          "path": "/faq"
-        },
-        {
-          "id": 6,
-          "name": "404 Page",
-          "path": "/404"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Blog",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "id": 1,
-          "name": "Blog",
-          "path": "/blog"
-        },
-        {
-          "id": 2,
-          "name": "Blog Details",
-          "path": "/blog/building-quality"
-        }
-      ]
-    },
-    {
-      "id": 6,
       "name": "Contact",
       "path": "/contact"
     }
@@ -245,39 +76,39 @@
     },
     {
       "id": 3,
-      "title": "New York",
+      "title": "New Delhi",
       "children": [
         {
           "isLocation": true,
-          "name": "1772 Street Charleston, New York",
-          "path": "https://maps.app.goo.gl/ebuSmBmMBFCDUSjE7"
+          "name": "J-Block, Rajouri Garden Extension, New Delhi",
+          "path": "https://maps.app.goo.gl/AeWwXXwXmZUf331o8"
         },
         {
-          "name": "+1287-360-633",
-          "path": "tel:+1287-360-633"
+          "name": "+91-7982069421",
+          "path": "tel:+917982069421"
         },
         {
-          "name": "info@yourwebsite.com",
-          "path": "mailto:info@yourwebsite.com"
+          "name": "ecomlifters@gmail.com",
+          "path": "mailto:ecomlifters@gmail.com"
         }
       ]
     },
     {
       "id": 4,
-      "title": "London",
+      "title": "Toronto",
       "children": [
         {
           "isLocation": true,
-          "name": "96 Park Hall, West Dulwich",
-          "path": "https://maps.app.goo.gl/ebuSmBmMBFCDUSjE7"
+          "name": "Yorkdale, North York, ON",
+          "path": "https://maps.app.goo.gl/kPibBVPjtiDQR7EF8"
         },
         {
-          "name": "+1287-360-633",
-          "path": "tel:+1287-360-633"
+          "name": "+91-7982069421",
+          "path": "tel:+917982069421"
         },
         {
-          "name": "info@yourwebsite.com",
-          "path": "mailto:info@yourwebsite.com"
+          "name": "ecomlifters@gmail.com",
+          "path": "mailto:ecomlifters@gmail.com"
         }
       ]
     }
