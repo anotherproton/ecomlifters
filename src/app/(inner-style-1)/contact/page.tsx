@@ -15,7 +15,7 @@ const Contact = () => {
         description={meta?.meta_description}
       />
       <ContactHero {...hero} />
-      <div className="overflow-hidden">
+      {/* <div className="overflow-hidden">
         <Image
           src={image}
           alt="image"
@@ -23,7 +23,7 @@ const Contact = () => {
           height={850}
           className="w-full"
         />
-      </div>
+      </div> */}
       <ContactArea {...mainContact} />
     </main>
   );

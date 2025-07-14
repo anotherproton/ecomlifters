@@ -1,13 +1,13 @@
 import { getMainPage } from "@/lib/helper/contentConverter";
 import ContactHero from "@/components/contact/ContactHero";
-import Image from "next/image";
+// import Image from "next/image";
 import ContactArea from "@/components/contact/ContactArea";
 import SeoData from "@/components/tools/SeoData";
 
 const Contact = () => {
   const { data: contactData } = getMainPage("/contact/_index.mdx");
 
-  const { meta, hero, image, contact: mainContact } = contactData || {};
+  const { meta, hero, contact: mainContact } = contactData || {};
   return (
     <main className="details-bold">
       <SeoData
@@ -15,7 +15,7 @@ const Contact = () => {
         description={meta?.meta_description}
       />
       <ContactHero {...hero} />
-      <div className="overflow-hidden">
+      {/* <div className="overflow-hidden">
         <Image
           src={image}
           alt="image"
@@ -23,7 +23,7 @@ const Contact = () => {
           height={850}
           className="w-full"
         />
-      </div>
+      </div> */}
       <ContactArea {...mainContact} />
     </main>
   );
