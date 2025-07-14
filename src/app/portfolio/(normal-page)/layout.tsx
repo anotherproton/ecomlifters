@@ -1,7 +1,6 @@
 import ScrollSmootherComponent from "@/components/tools/ScrollSmoother";
 import ToolsComponent from "@/components/tools";
 import ScrollTop from "@/components/tools/ScrollTop";
-import InnerHeader1 from "@/components/headers/InnerHeader1";
 import BrandingHeader from "@/components/headers/BrandingHeader";
 
 const Layout = ({

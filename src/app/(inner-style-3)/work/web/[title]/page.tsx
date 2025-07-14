@@ -4,7 +4,6 @@ import MDXContent from "@/components/tools/MDXContent";
 import WorkDetails from "@/components/work/WorkDetails";
 import WorkDetailNav from "@/components/elements/workDetails/WorkDetailNav";
 import SeoData from "@/components/tools/SeoData";
-import FooterCta from "@/components/footer/FooterCta";
 
 type Props = {
   params: {

@@ -36,7 +36,7 @@ const service = ({ params }: Props) => {
     notFound();
   }
 
-  const { title, meta, faqs, faq_title, contactTitle, btn_text } =
+  const { title, meta, contactTitle, btn_text } =
     service.data || {};
 
   return (
