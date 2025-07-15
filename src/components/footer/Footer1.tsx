@@ -21,9 +21,9 @@ const Footer1 = ({ footerNav }: Props) => {
   const { label, company } = footer_info?.copyright || {};
   const [firstWord, ...remainingWords] = company.split(" ");
   return (
-    <footer className="main-section-style !pb-0 bg-background-fixed" style={{ marginTop: '-30px' }}>
+    <footer className="main-section-style !pb-0 bg-background-fixed" style={{ marginTop: '10px' }}>
       <div className="container">
-                <div className="section-spacing-top pb-[54px] xl:pb-[94px] overflow-hidden">
+                <div className=" pt-[70px] pb-[20px] xl:pb-[0px] overflow-hidden">
           {/* Desktop Layout */}
           <div className="hidden xl:block">
             <div className="grid gap-y-20 gap-x-[60px] justify-between xl:grid-cols-[1fr,190px,190px,385px]">
@@ -93,7 +93,7 @@ const Footer1 = ({ footerNav }: Props) => {
         </div>
         
         {/* Social Media Section */}
-        <div className="border-t border-[#202020] mt-[50px] xl:mt-[90px]">
+        <div className="border-t border-[#202020] mt-[50px] xl:mt-[30px]">
           <div className="container">
             <div className="py-[30px] xl:py-[40px] flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="text-center md:text-left">

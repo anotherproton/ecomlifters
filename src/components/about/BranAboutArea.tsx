@@ -36,7 +36,7 @@ const BranAboutArea = ({ aboutData }: Props) => {
         2xl:grid-cols-[auto,930px]"
       >
         <div>
-          <span className="text-[18px] leading-none inline-block font-medium text-text-fixed uppercase">
+          <span className="text-[28px] leading-none inline-block font-medium text-text-fixed uppercase">
             {sub_title}
           </span>
         </div>

@@ -27,7 +27,7 @@ const WorkDetailNav = ({ slugs, params }: Props) => {
   const prevSlug = slugs[prevIndex];
   const nextSlug = slugs[nextIndex];
   return (
-    <div className="btn-area" ref={containerRef}>
+    <div className="btn-area" ref={containerRef} style={{display: "none"}}>
       <div className="container2 has_fade_anim">
         <div className="btn-area-inner pt-10 xl:pt-[60px] pb-[60] xl:pb-[120px] 2xl:pb-[150px]">
           <div className="btn-wrapper flex gap-[30px]">

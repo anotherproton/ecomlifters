@@ -9,7 +9,7 @@ const BranProfileCard = ({ data, slug }: TTeamMemberType) => {
   return (
     <div className="team_box grid gap-x-[25px] gap-y-5 xl:gap-x-[35px] grid-cols-[40%,1fr] xl:grid-cols-[36%,1fr] py-[35px] border-b border-[#1C1C1C] dark:border-[#FFFFFF]">
       <div>
-        <Link href={`/team/${slug}`}>
+        <Link href={`/`}>
           <div className="overflow-hidden">
             <Image
               src={avatar}
@@ -24,7 +24,7 @@ const BranProfileCard = ({ data, slug }: TTeamMemberType) => {
       <div className="content flex gap-[30px] flex-col justify-between">
         <div className="top">
           <h3 className="name text-[22px] xl:text-[24px]">
-            <Link href={`/team/${slug}`}>{name}</Link>
+            <Link href={`/`}>{name}</Link>
           </h3>
           <p className="post text-[16px] mt-3 text-[#121212] dark:text-text-fixed-3">
             {post}

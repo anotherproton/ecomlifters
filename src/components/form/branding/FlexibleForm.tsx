@@ -3,6 +3,9 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { emailjsConfig, EmailTemplateParams } from "@/lib/emailjs.config";
 
 import {
   Form,
@@ -20,6 +23,10 @@ type Props = {
 };
 
 const FlexibleForm = ({ btnText }: Props) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
   const form = useForm<z.infer<typeof formSchema> & { phone?: string }>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -31,8 +38,38 @@ const FlexibleForm = ({ btnText }: Props) => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // console.log(values)
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsLoading(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    try {
+      // Template parameters for EmailJS
+      const templateParams: EmailTemplateParams = {
+        from_name: values.name,
+        from_email: values.email,
+        phone: values.phone || 'Not provided',
+        subject: values.subject,
+        message: values.message,
+        to_email: 'ecomlifters@gmail.com',
+      };
+
+      await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        templateParams as unknown as Record<string, unknown>,
+        emailjsConfig.publicKey
+      );
+      
+      setSubmitStatus('success');
+      form.reset(); // Reset form after successful submission
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      setSubmitStatus('error');
+      setErrorMessage('Failed to send message. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -120,10 +157,25 @@ const FlexibleForm = ({ btnText }: Props) => {
             )}
           />
         </div>
+
+        {/* Status Messages */}
+        {submitStatus === 'success' && (
+          <div className="text-green-600 text-center py-2">
+            ✅ Message sent successfully! We'll get back to you soon.
+          </div>
+        )}
+        
+        {submitStatus === 'error' && (
+          <div className="text-red-600 text-center py-2">
+            ❌ {errorMessage}
+          </div>
+        )}
+
         <ButtonFlip
           className="bg-black text-text-fixed-2 !mt-[60px]"
-          btnText={btnText || "Submit"}
+          btnText={isLoading ? "Sending..." : (btnText || "Submit")}
           type="submit"
+          disabled={isLoading}
         />
       </form>
     </Form>
