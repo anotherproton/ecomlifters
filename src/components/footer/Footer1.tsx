@@ -21,7 +21,7 @@ const Footer1 = ({ footerNav }: Props) => {
   const { label, company } = footer_info?.copyright || {};
   const [firstWord, ...remainingWords] = company.split(" ");
   return (
-    <footer className="main-section-style !pb-0 bg-background-fixed">
+    <footer className="main-section-style !pb-0 bg-background-fixed" style={{ marginTop: '-30px' }}>
       <div className="container">
                 <div className="section-spacing-top pb-[54px] xl:pb-[94px] overflow-hidden">
           {/* Desktop Layout */}

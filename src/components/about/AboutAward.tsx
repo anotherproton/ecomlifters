@@ -67,17 +67,10 @@ const AboutAward = ({
 
         <div className="flex gap-y-5 gap-x-5 md:gap-x-[50px] justify-end mt-[43px] xl:mt-[63px]">
           <div className="has_fade_anim" data-fade-from="right">
-            <Image src={images[0]} alt="image_1" width={350} height={210} />
+            
           </div>
           <div className="max-w-[570px] xl:max-w-[670px] flex-1 basis-auto grow">
-            <Image
-              src={images[1]}
-              alt="image_2"
-              width={330}
-              height={460}
-              className="has_fade_anim"
-              data-fade-from="left"
-            />
+            
           </div>
         </div>
       </div>

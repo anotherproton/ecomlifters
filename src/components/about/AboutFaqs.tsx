@@ -44,7 +44,7 @@ const AboutFaqs = ({ title, image, video, faqs }: Props) => {
 
   return (
     <section>
-      <div className="inner-container" ref={containerRef}>
+      <div className="inner-container" ref={containerRef} style={{ display: 'none' }}>
         <div className="section-spacing-bottom">
           <div className="bg-background-3 grid gap-0 lg:grid-cols-[auto_500px] xl:grid-cols-[auto_650px] justify-between">
             <div className="thumb relative">

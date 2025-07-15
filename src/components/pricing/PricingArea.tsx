@@ -31,7 +31,7 @@ const PricingArea = ({ title, cards }: pricingProps) => {
   );
 
   return (
-    <div className="container2" ref={containerRef}>
+    <div className="container2" ref={containerRef} style={{ display: 'none' }}>
       <div className="main-section-spacing">
         <InnerSectionTitle
           title={title}

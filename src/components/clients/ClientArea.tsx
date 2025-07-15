@@ -46,7 +46,7 @@ const ClientArea = ({ brands }: Props) => {
   );
 
   return (
-    <div className="container2" ref={containerRef}>
+    <div className="container2" ref={containerRef} style={{ display: 'none' }}>
       <div className="main-section-spacing">
         <div className="relative">
           <h2 className="has_fade_anim text-[18px] static text-center md:text-start mb-[10px] mx-auto leading-[1] start-[40%] md:absolute max-w-[230px] md:top-10 lg:text-[22px] lg:max-w-[280px] lg:top-[50px] xl:max-w-[370px] xl:top-[70px] xl:text-[30px]">

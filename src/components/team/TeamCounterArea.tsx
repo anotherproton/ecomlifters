@@ -25,7 +25,7 @@ const TeamCounterArea = ({
   bg_2,
 }: Props) => {
   return (
-    <div className="counter_area">
+    <div className="counter_area" style={{ display: 'none' }}>
       <div className="counter_area_inner grid gap-[10px] xl:grid-cols-[1fr_670px] 2xl:grid-cols-[1fr_870px]">
         <div className="thumb">
           <Image

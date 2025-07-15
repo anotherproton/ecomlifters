@@ -29,7 +29,7 @@ const AboutCounter = ({
   );
   return (
     <div
-      className="has_fade_anim pt-[71px] pb-[41px] xl:pt-[91px] xl:pb-[61px] 2xl:pt-[131px] 2xl:pb-[101px]"
+      className="has_fade_anim pt-[71px] pb-[41px] xl:pt-[91px] xl:pb-[61px] 2xl:pt-[131px] 2xl:pb-[101px] "
       ref={containerRef}
     >
       <div className="inner-container">

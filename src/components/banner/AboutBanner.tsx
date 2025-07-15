@@ -34,7 +34,7 @@ const AboutBanner = ({
   );
 
   return (
-    <section className="max-w-[1920px]">
+    <section className="max-w-[1920px]" style={{ display: 'none' }}>
       <div
         ref={containerRef}
         className="grid lg:grid-cols-[1fr,47%] xl:grid-cols-[1fr,43%]"

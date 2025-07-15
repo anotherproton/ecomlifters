@@ -24,7 +24,7 @@ const ContactBanner = ({ contactTitle, btn_text }: Props) => {
   );
 
   return (
-    <div className="container2" ref={containerRef}>
+    <div className="container1" ref={containerRef}>
       <div className="main-section-spacing px-[30px] bg-background-3 relative z-[1] overflow-hidden ">
         <div className="shape-1 absolute hidden -right-[6%] md:block w-[270px] top-[-35%] lg:w-[340px] lg:top-[-45%] xl:w-[440px] xl:top-[-15%] z-[-1] ">
           <Image
