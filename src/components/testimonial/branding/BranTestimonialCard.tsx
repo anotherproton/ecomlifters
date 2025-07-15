@@ -41,13 +41,7 @@ const BranTestimonialCard = ({ icon, text, author }: testimonialProps) => {
             </span>
           </div>
           <div>
-            <ImageComponent
-              src={logo.light}
-              darkSrc={logo.dark}
-              width={93}
-              height={26}
-              alt="logo"
-            />
+            
           </div>
         </div>
       </div>

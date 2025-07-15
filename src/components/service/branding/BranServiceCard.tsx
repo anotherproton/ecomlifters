@@ -8,9 +8,9 @@ const BranServiceCard = ({ data, slug }: TServiceType) => {
   }
 
   return (
-    <div className="has_fade_anim" data-delay={data.id ? data.id * 0.15 : 0}>
-      <Link href={`/service/branding/${slug}`}>
-        <div className="service-box hover:scale-[1.03] bg-[#1C1C1C] pt-[37px] pb-[36px] px-[30px] 2xl:pt-[47px] 2xl:pb-[46px] 2xl:px-[50px] rounded-[20px] transition-all duration-500">
+    <div className="has_fade_anim h-full" data-delay={data.id ? data.id * 0.15 : 0}>
+      <Link href={`/service/branding/${slug}`} className="h-full block">
+        <div className="service-box h-full flex flex-col hover:scale-[1.03] bg-[#1C1C1C] pt-[37px] pb-[36px] px-[30px] 2xl:pt-[47px] 2xl:pb-[46px] 2xl:px-[50px] rounded-[20px] transition-all duration-500">
           <span className="number text-[18px] text-text-fixed-2">
             {formatSerialNumber(data.id)}
           </span>
@@ -22,8 +22,8 @@ const BranServiceCard = ({ data, slug }: TServiceType) => {
               width={50}
             />
           </div>
-          <div className="content">
-            <h3 className="title leading-[1.2] mt-[26px] text-[24px] xl:mt-[46px] xl:text-[26px] 2xl:mt-14 2xl:text-[30px] text-text-fixed-2">
+          <div className="content mt-auto">
+            <h3 className="title leading-[1.2] mt-[26px] text-[24px] xl:mt-[46px] xl:text-[26px] 2xl:mt-14 2xl:text-[30px] text-text-fixed-2 hover:text-[#96c93d] transition-colors duration-300">
               {data.title}
             </h3>
             <p className="text text-text-fixed-3 mt-[18px] xl:mt-[23px]">

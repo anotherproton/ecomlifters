@@ -66,7 +66,7 @@ const BrandingProcess = ({ title, shape, process_list }: Props) => {
                   {process_list?.map((item, index) => (
                     <CarouselItem
                       key={index}
-                      className="has_fade_anim basis-[86%] md:basis-[46%] lg:basis-[40%] xl:basis-[33%] 2xl:basis-[28%]"
+                      className="has_fade_anim basis-[86%] md:basis-[46%] lg:basis-[40%] xl:basis-[25%] 2xl:basis-[25%]"
                       data-delay={item.serial_no ? item.serial_no * 0.15 : 0}
                       data-ease="bounce"
                     >

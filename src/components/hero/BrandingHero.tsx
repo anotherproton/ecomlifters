@@ -76,7 +76,7 @@ const BrandingHero = ({
             <div>
               <h1
                 className={cn(
-                  "has_char_anim branding-hero-title !font-getaway text-text-fixed uppercase !leading-[0.83] !font-normal text-[60px] mt-0 mb-0 sm:text-[60px] sm:mt-[-2px] sm:mb-[-14px] md:text-[100px] md:mt-[-2px] md:mb-[-10px] md:tracking-[-0.04em] xl:text-[140px] xl:mb-[-14px] 2xl:text-[200px] 2xl:mt-[-3px] 2xl:mb-[-25px]",
+                  "has_char_anim branding-hero-title !font-getaway text-text-fixed uppercase !leading-[0.83] !font-normal text-[60px] mt-0 mb-0 sm:text-[60px] sm:mt-[-2px] sm:mb-[-14px] md:text-[100px] md:mt-[-2px] md:mb-[-10px] md:tracking-[-0.04em] xl:text-[140px] xl:mb-[-14px] 2xl:text-[120px] 2xl:mt-[-3px] 2xl:mb-[-25px]",
                   layout === "box" &&
                     "xxl:text-[210px] 2xl:mt-0 2xl:mb-[-14px] 2xl:max-w-[900px]"
                 )}

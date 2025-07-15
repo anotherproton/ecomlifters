@@ -2,6 +2,7 @@
 
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import Link from "next/link";
 import hasPinContent from "@/lib/animation/hasPinContent";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -50,7 +51,12 @@ const BrandingWork = ({
               className="has_fade_anim link-meta flex gap-y-[10px] gap-x-10"
               data-fade-from="left"
             >
-              <div className="flex items-center gap-3">
+              <Link 
+                href="https://x.com/ecomlifters" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+              >
                 <div className="icon border border-border w-10 h-10 rounded-[10px]  flex justify-center items-center text-[18px]">
                   <FaTwitter className="text-text" />
                 </div>
@@ -62,8 +68,13 @@ const BrandingWork = ({
                     Twitter
                   </h2>
                 </div>
-              </div>
-              <div className="flex items-center gap-3">
+              </Link>
+              <Link 
+                href="https://www.instagram.com/ecomlifters/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+              >
                 <div className="icon border border-border w-10 h-10 rounded-[10px] flex justify-center items-center text-[18px]">
                   <FaInstagram className="text-text" />
                 </div>
@@ -75,7 +86,7 @@ const BrandingWork = ({
                     Instagram
                   </h2>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
 

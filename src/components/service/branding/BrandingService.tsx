@@ -44,23 +44,24 @@ const BrandingService = ({ title, info, action_btn, services }: Props) => {
               ))}
             </div>
           </div>
-          <div
-            className="has_fade_anim text-center mt-[50px] xl:mt-[70px] "
-            data-fade-from="left"
-          >
+          <div className="text-center mt-[50px] xl:mt-[70px]">
             <p className="bg-[#1C1C1C] max-w-[500px] leading-[1.41] text-[18px] inline-block text-center rounded-[100px] py-[19px] px-[41px] text-text-fixed-2">
               {info}
-              <br />
-              {action_btn?.enable && (
-                <Link
-                  href={action_btn.link}
-                  className="wc-btn-underline font-normal tracking-normal relative inline-flex items-center gap-[10px] whitespace-nowrap"
-                >
-                  {action_btn.label}
-                </Link>
-              )}
             </p>
           </div>
+          {action_btn?.enable && (
+            <div
+              className="has_fade_anim text-center mt-[20px]"
+              data-fade-from="left"
+            >
+              <Link
+                href={action_btn.link}
+                className="bg-[#1C1C1C] max-w-[500px] leading-[1.41] text-[18px] inline-block text-center rounded-[100px] py-[19px] px-[41px] text-text-fixed-2 font-normal tracking-normal relative inline-flex items-center gap-[10px] whitespace-nowrap"
+              >
+                {action_btn.label}
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </section>

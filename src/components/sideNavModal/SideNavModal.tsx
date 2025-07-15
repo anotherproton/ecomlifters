@@ -149,7 +149,7 @@ const SideNavModal = () => {
                                             <DrawerClose asChild>
                                               <Link
                                                 href={submenuChild.path}
-                                                className="text-[1.9vh] lg:text-[4.58vh] xl:text-[5.36vh] hover:text-text-fixed-2 pl-5 mb-[20px] lg:mb-[26px]"
+                                                className="text-[1.9vh] lg:text-[4.58vh] xl:text-[5.36vh] hover:text-text-fixed-2 pl-5 mb-[20px] lg:mb-[26px] block"
                                               >
                                                 {submenuChild.name}
                                               </Link>
@@ -163,7 +163,7 @@ const SideNavModal = () => {
                                   <DrawerClose asChild key={submenu.id}>
                                     <Link
                                       href={submenu.path}
-                                      className="text-[2.2vh] lg:text-[5.3vh] xl:text-[6.2vh] mb-[20px] lg:mb-[26px] hover:text-text-fixed-2 md:pl-[58px]"
+                                      className="text-[2.2vh] lg:text-[5.3vh] xl:text-[6.2vh] mb-[20px] lg:mb-[26px] hover:text-text-fixed-2 md:pl-[58px] block"
                                     >
                                       {submenu.name}
                                     </Link>
@@ -177,7 +177,7 @@ const SideNavModal = () => {
                             <Link
                               href={menuItem.path}
                               className={clsx(
-                                " text-[2.5vh] lg:text-[6vh] xl:text-[8vh] inline-block hover:text-text-fixed-2 md:pl-[58px] !leading-[0.9]",
+                                " text-[2.5vh] lg:text-[6vh] xl:text-[8vh] block hover:text-text-fixed-2 md:pl-[58px] !leading-[0.9]",
                                 i !== SideMenuData.length - 1 &&
                                   "mb-5 lg:mb-[26px]"
                               )}
