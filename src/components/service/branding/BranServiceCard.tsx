@@ -9,7 +9,7 @@ const BranServiceCard = ({ data, slug }: TServiceType) => {
 
   return (
     <div className="has_fade_anim h-full" data-delay={data.id ? data.id * 0.15 : 0}>
-      <Link href={`/service/branding/${slug}`} className="h-full block">
+      <Link href={`/`} className="h-full block">
         <div className="service-box h-full flex flex-col hover:scale-[1.03] bg-[#1C1C1C] pt-[37px] pb-[36px] px-[30px] 2xl:pt-[47px] 2xl:pb-[46px] 2xl:px-[50px] rounded-[20px] transition-all duration-500">
           <span className="number text-[18px] text-text-fixed-2">
             {formatSerialNumber(data.id)}

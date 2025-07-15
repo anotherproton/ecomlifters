@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "meta_author": "Wealcoder",
+    "meta_author": "Ecom Lifters",
     "meta_image": "",
-    "meta_description": "Arolax Landing Page"
+    "meta_description": "Ecom Lifters Landing Page"
   },
   "site_info": {
     "title": "Ecom Lifters",
-    "description": "Arolax is a full-service brand agency for purpose-driven companies. We build brands that look good, sound good,and do good.",
-    "info": "Arolax is a startup design agency based in Canada",
+    "description": "Ecom Lifters is a full-service brand agency for purpose-driven companies. We build brands that look good, sound good,and do good.",
+    "info": "Ecom Lifters is a startup design agency based in Canada",
     "base_url": "",
     "logo": "/assets/imgs/logo/ecomlifers-logo.png",
-    "logo_light": "/assets/imgs/logo/logo-light.png",
+    "logo_light": "/assets/imgs/logo/logo-white-ecom.png",
     "logo_light_2": "/assets/imgs/logo/logo-light-2.png",
     "logo_tm_light": "/assets/imgs/logo/logo-tm-light.png",
     "logo_width": 200,
@@ -34,32 +34,17 @@
       "company": "Ecom Lifters",
       "link": "https://ecomlifters.com/"
     },
-    "ctaText": "Let’s Talk with us"
+    "ctaText": "Let's Talk with us"
   },
   "social": [
     {
-      "name": "Fb",
-      "link": "https://www.facebook.com/",
-      "value": "750,000"
-    },
-    {
       "name": "Tw",
-      "link": "https://twitter.com/",
+      "link": "https://x.com/ecomlifters",
       "value": "750,000"
     },
     {
       "name": "In",
-      "link": "https://www.instagram.com/",
-      "value": "750,000"
-    },
-    {
-      "name": "Db",
-      "link": "https://dribbble.com/",
-      "value": "750,000"
-    },
-    {
-      "name": "Li",
-      "link": "https://www.behance.net/",
+      "link": "https://www.instagram.com/ecomlifters/",
       "value": "750,000"
     }
   ]

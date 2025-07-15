@@ -29,7 +29,7 @@ const ClientSlider = ({
   );
   return (
     <div className="has_fade_anim" ref={containerRef}>
-      <div className="bg-background-3 dark:bg-[#1B1B1B]">
+      <div className="bg-background-3 dark:bg-[#1B1B1B]" style={{ display: 'none' }}>
         <div className="container2">
           <div className="relative py-[35px] lg:px-20 xl:py-[55px] xl:px-[120px] lg:me-[calc((100vw-1140px)/-2)] xl:me-[calc((100vw-1320px)/-2)]">
             <div className="hidden lg:block w-max h-full absolute top-0 end-[calc(100%)] overflow-hidden">

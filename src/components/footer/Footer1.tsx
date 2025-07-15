@@ -31,24 +31,24 @@ const Footer1 = ({ footerNav }: Props) => {
                 <div className="relative">
                   <Logo
                     light={true}
-                    url={site_info?.logo}
-                    customWidth={200}
-                    customHeight={54}
-                    className="max-h-[54px] !w-auto"
+                    url={site_info?.logo_light}
+                    customWidth={500}
+                    customHeight={300}
+                    className="max-h-[304px] !w-auto"
                   />
                 </div>
                 <div className="flex-1">
-                  {footerNav.slice(0, 2).map((item) => (
+                  {footerNav.slice(0, 1).map((item) => (
                     <div key={item.id} className="mb-8">
                       <FooterNav {...item} />
                     </div>
                   ))}
                 </div>
               </div>
-              {footerNav.slice(2).map((item) => (
+              {footerNav.slice(1).map((item) => (
                 <FooterNav key={item.id} {...item} />
               ))}
-              <div className="order-1 sm:order-0">
+              {/* <div className="order-1 sm:order-0">
                 <h2 className="title text-text-fixed-2 text-[22px] xl:text-[30px] leading-[.73]">
                   Newsletter
                 </h2>
@@ -59,7 +59,7 @@ const Footer1 = ({ footerNav }: Props) => {
                   </p>
                 </div>
                 <EmailInput />
-              </div>
+              </div> */}
             </div>
           </div>
           
