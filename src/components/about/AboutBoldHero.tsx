@@ -40,7 +40,15 @@ const AboutBoldHero = ({ data }: Props) => {
   return (
     <section className="pt-[80px] 2xl:pt-[100px]" ref={containerRef}>
       <div className="overflow-hidden">
-       
+        <ImageComponent
+          src={image}
+          width={1920}
+          height={620}
+          alt="about-hero-img"
+          dataFadeOffset="0"
+          dataDelay=".30"
+          dataSpeed={0.8}
+        />
       </div>
       <div className="inner-container">
         <div className="section-spacing-top relative">
@@ -50,19 +58,37 @@ const AboutBoldHero = ({ data }: Props) => {
             <div className="z-[-1] has_fade_anim grid gap-[30px] grid-cols-1 sm:grid-cols-[180px] lg:grid-cols=[240px] xl:grid-cols-[310px] 2xl:grid-cols-[410px] justify-end">
               <div>
                 {gallery?.[0] && (
-                 
+                  <ImageComponent
+                    src={gallery[0]}
+                    alt="thumb-1"
+                    width={410}
+                    height={260}
+                    className="w-full h-full object-cover"
+                  />
                 )}
               </div>
             </div>
             <div className="has_fade_anim grid gap-[15px] lg:gap-[30px] sm:grid-cols-[1fr,180px] lg:grid-cols-[1fr,240px] xl:grid-cols-[1fr,310px] 2xl:grid-cols-[1fr,410px] sm:ms-[calc((100vw-var(--container-max-widths))/-2-12px)]">
               <div>
                 {gallery?.[1] && (
-                 
+                  <ImageComponent
+                    src={gallery[1]}
+                    width={1165}
+                    height={620}
+                    alt="thumb-2"
+                    className="w-full h-full object-cover"
+                  />
                 )}
               </div>
               <div>
                 {gallery?.[2] && (
-                 
+                  <ImageComponent
+                    src={gallery[2]}
+                    width={410}
+                    height={620}
+                    alt="thumb-3"
+                    className="w-full h-full object-cover"
+                  />
                 )}
               </div>
             </div>
