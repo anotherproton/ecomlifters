@@ -47,7 +47,6 @@ export default function Home() {
       <BrandingImage {...image} />
       <BrandingTestimonial {...testimonial} brands={brands?.brands} />
       <BrandingTeam {...team} teamMembers={teamMembers} />
-      <BrandingBlog {...blogSection} blogs={blogs} />
       <Cta1 {...cta} />
     </main>
   );
