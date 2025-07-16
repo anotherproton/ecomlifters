@@ -1,14 +1,14 @@
 {
   "metadata": {
     "meta_author": "Ecom Lifters",
-    "meta_image": "",
-    "meta_description": "Ecom Lifters Landing Page"
+    "meta_image": "/assets/imgs/logo/ecomlifers-logo.png",
+    "meta_description": "Ecom Lifters - Full-service e-commerce growth agency helping businesses scale through expert marketing, development, and optimization solutions."
   },
   "site_info": {
     "title": "Ecom Lifters",
     "description": "Ecom Lifters is a full-service brand agency for purpose-driven companies. We build brands that look good, sound good,and do good.",
     "info": "Ecom Lifters is a startup design agency based in Canada",
-    "base_url": "",
+    "base_url": "https://ecomlifters.com",
     "logo": "/assets/imgs/logo/ecomlifers-logo.png",
     "logo_light": "/assets/imgs/logo/logo-white-ecom.png",
     "logo_light_2": "/assets/imgs/logo/logo-light-2.png",

@@ -19,15 +19,18 @@ const SeoData = ({
   noindex?: boolean;
 }) => {
   const { meta_image, meta_author, meta_description } = siteConfig.metadata;
-  const { base_url } = siteConfig.site_info;
+  const { base_url, title: site_title } = siteConfig.site_info;
   const pathname = usePathname();
+
+  const finalTitle = meta_title ? meta_title : title ? title : site_title;
+  const finalDescription = description ? description : meta_description;
+  const finalImage = image ? image : meta_image;
+  const fullImageUrl = `${base_url}${finalImage}`;
 
   return (
     <>
       {/* title */}
-      <title>
-        {meta_title ? meta_title : title ? title : siteConfig.site_info.title}
-      </title>
+      <title>{finalTitle}</title>
 
       {/* canonical url */}
       {canonical && <link rel="canonical" href={canonical} itemProp="url" />}
@@ -36,59 +39,35 @@ const SeoData = ({
       {noindex && <meta name="robots" content="noindex,nofollow" />}
 
       {/* meta-description */}
-      <meta
-        name="description"
-        content={description ? description : meta_description}
-      />
+      <meta name="description" content={finalDescription} />
 
       {/* author from config.json */}
       <meta name="author" content={meta_author} />
 
-      {/* og-title */}
-      <meta
-        property="og:title"
-        content={
-          meta_title ? meta_title : title ? title : siteConfig.site_info.title
-        }
-      />
-
-      {/* og-description */}
-      <meta
-        property="og:description"
-        content={description ? description : meta_description}
-      />
+      {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta
-        property="og:url"
-        content={`${base_url}/${pathname.replace("/", "")}`}
-      />
+      <meta property="og:site_name" content={site_title} />
+      <meta property="og:title" content={finalTitle} />
+      <meta property="og:description" content={finalDescription} />
+      <meta property="og:url" content={`${base_url}${pathname}`} />
+      <meta property="og:image" content={fullImageUrl} />
+      <meta property="og:image:alt" content={`${site_title} - ${finalTitle}`} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:locale" content="en_US" />
 
-      {/* twitter-title */}
-      <meta
-        name="twitter:title"
-        content={
-          meta_title ? meta_title : title ? title : siteConfig.site_info.title
-        }
-      />
-
-      {/* twitter-description */}
-      <meta
-        name="twitter:description"
-        content={description ? description : meta_description}
-      />
-
-      {/* og-image */}
-      <meta
-        property="og:image"
-        content={`${base_url}${image ? image : meta_image}`}
-      />
-
-      {/* twitter-image */}
-      <meta
-        name="twitter:image"
-        content={`${base_url}${image ? image : meta_image}`}
-      />
+      {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@ecomlifters" />
+      <meta name="twitter:creator" content="@ecomlifters" />
+      <meta name="twitter:title" content={finalTitle} />
+      <meta name="twitter:description" content={finalDescription} />
+      <meta name="twitter:image" content={fullImageUrl} />
+      <meta name="twitter:image:alt" content={`${site_title} - ${finalTitle}`} />
+
+      {/* WhatsApp specific */}
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:secure_url" content={fullImageUrl} />
     </>
   );
 };
