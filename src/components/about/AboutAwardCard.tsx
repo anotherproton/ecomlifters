@@ -27,19 +27,13 @@ const AboutAwardCard = ({ cardData }: Props) => {
 
   return (
     <div
-      className="ps-10 border-s first:ps-0 first:border-0"
+      className="pl-10 border-l first:pl-0 first:border-0"
       ref={containerRef}
     >
       <div className="meta grid gap-[18px] grid-cols-[30px_auto]">
         <div className="icon">
-          <ImageComponent
-            src={icon.dark}
-            darkSrc={icon.light}
-            width={32}
-            height={28}
-            className="inline-block h-auto w-auto"
-            alt="icon_1"
-          />
+        
+        
         </div>
         <div className="content">
           <h3 className="number text-[36px] leading-[.85]">

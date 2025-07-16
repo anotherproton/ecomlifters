@@ -40,7 +40,7 @@ const AboutAward = ({
 
   return (
     <section className="inner-container" ref={containerRef}>
-      <div className="main-section-spacing relative z-10">
+      <div className="main-section-spacing relative z-10" style={{ paddingBottom: "0px" }}>
         <div className="grid lg:items-end gap-5 lg:gap-[50px] lg:grid-cols-[330px_1fr] 2xl:grid-cols-[390px_1fr]">
           <div className="mb-[10px] lg:-mb-10 xl:-mb-[50px]">
             <span className="text-[16px] inline-block uppercase ps-[140px] relative">
