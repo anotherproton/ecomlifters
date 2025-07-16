@@ -46,7 +46,7 @@ export default function Home() {
       <BrandingProcess {...process} />
       <BrandingImage {...image} />
       <BrandingTestimonial {...testimonial} brands={brands?.brands} />
-      <BrandingTeam {...team} teamMembers={teamMembers} />
+      
       <Cta1 {...cta} />
     </main>
   );

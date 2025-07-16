@@ -12,7 +12,7 @@ const TeamProfileCard = ({ profileData, className }: Props) => {
   const { name, avatar, post } = profileData.data;
   return (
     <div>
-      <Link href={`/team/${profileData.slug}`}>
+      <Link href={`/`}>
         <div>
           <Image
             src={avatar}
