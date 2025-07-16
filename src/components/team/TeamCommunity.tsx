@@ -34,7 +34,7 @@ const TeamCommunity = ({ title, description, gallery }: Props) => {
             {description}
           </p>
         </div>
-        <div className="mt-[43px] xl:mt-[63px]">
+        <div className="mt-[43px] xl:mt-[63px]" style={{ display: 'none' }}>
           <div className="has_fade_anim grid gap-[30px] grid-cols-[auto_auto_auto]">
             <div className="mt-[30px] xl:mt-[140px]">
               <div className="thumb">

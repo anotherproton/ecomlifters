@@ -61,6 +61,10 @@
           "path": "/about"
         },
         {
+          "name": "Our Team",
+          "path": "/team"
+        },
+        {
           "name": "Contact Us",
           "path": "/contact"
         }

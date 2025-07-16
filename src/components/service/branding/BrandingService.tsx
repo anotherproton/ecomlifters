@@ -56,7 +56,7 @@ const BrandingService = ({ title, info, action_btn, services }: Props) => {
             >
               <Link
                 href={action_btn.link}
-                className="bg-[#1C1C1C] max-w-[500px] leading-[1.41] text-[18px] inline-block text-center rounded-[100px] py-[19px] px-[41px] text-text-fixed-2 font-normal tracking-normal relative inline-flex items-center gap-[10px] whitespace-nowrap"
+                className="bg-[#95bf47] max-w-[500px] leading-[1.41] text-[18px] inline-block text-center rounded-[100px] py-[19px] px-[41px] text-text-fixed-2 font-normal tracking-normal relative inline-flex items-center gap-[10px] whitespace-nowrap"
               >
                 {action_btn.label}
               </Link>
