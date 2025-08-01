@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/landing/:path*",
+      "destination": "https://olive-moment-925909.framer.app/:path*"
+    }
+  ]
+}
