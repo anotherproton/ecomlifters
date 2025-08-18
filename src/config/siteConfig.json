@@ -9,7 +9,7 @@
     "description": "Ecom Lifters is a full-service brand agency for purpose-driven companies. We build brands that look good, sound good,and do good.",
     "info": "Ecom Lifters is a startup design agency based in Canada",
     "base_url": "https://ecomlifters.com",
-    "logo": "/assets/imgs/logo/logo-white-ecom.png",
+    "logo": "/assets/imgs/logo/ecomlifers-logo.png",
     "logo_light": "/assets/imgs/logo/logo-white-ecom.png",
     "logo_light_2": "/assets/imgs/logo/logo-light-2.png",
     "logo_tm_light": "/assets/imgs/logo/logo-tm-light.png",
@@ -49,4 +49,5 @@
     }
   ]
 }
+
 
