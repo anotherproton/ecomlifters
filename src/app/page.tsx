@@ -10,6 +10,7 @@ import BrandingTestimonial from "@/components/testimonial/branding/BrandingTesti
 import BrandingTeam from "@/components/team/branding/BrandingTeam";
 import BrandingBlog from "@/components/blog/branding/BrandingBlog";
 import Cta1 from "@/components/cta/Cta1";
+import GoogleMap from "@/components/map/GoogleMap";
 import SeoData from "@/components/tools/SeoData";
 import RefreshGsap from "@/components/tools/RefreshGsap";
 
@@ -48,6 +49,7 @@ export default function Home() {
       <BrandingTestimonial {...testimonial} brands={brands?.brands} />
       
       <Cta1 {...cta} />
+      <GoogleMap />
     </main>
   );
 }

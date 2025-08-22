@@ -7,6 +7,7 @@ import navigation from "@/config/navigation.json";
 import ScrollSmootherComponent from "@/components/tools/ScrollSmoother";
 import ToolsComponent from "@/components/tools";
 import ScrollTop from "@/components/tools/ScrollTop";
+import WhatsAppButton from "@/components/tools/WhatsAppButton";
 
 export default function RootLayout({
   children,
@@ -32,6 +33,7 @@ export default function RootLayout({
             <ScrollSmootherComponent />
             <ToolsComponent />
             <ScrollTop />
+            <WhatsAppButton />
             <div className="has-smooth" id="has_smooth"></div>
             <div id="smooth-wrapper">
               <div id="smooth-content">

@@ -86,21 +86,17 @@
         {
           "name": "+91-7982069421",
           "path": "tel:917982069421"
-        },
-        {
-          "name": "ecomlifters@gmail.com",
-          "path": "mailto:ecomlifters@gmail.com"
         }
       ]
     },
     {
       "id": 4,
-      "title": "Toronto",
+      "title": "Book a Call",
       "children": [
         {
           "isLocation": true,
-          "name": "Vaughan, Ontario, Canada",
-          "path": "https://maps.app.goo.gl/kPibBVPjtiDQR7EF8"
+          "name": "Book a free 30 minutes call with us",
+          "path": "https://calendly.com/ecomlifters/30min"
         },
         {
           "name": "",
