@@ -39,17 +39,32 @@ const GoogleMap = () => {
           
           <div className="has_fade_anim">
             <div className="w-full max-w-4xl mx-auto">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.1809940569087!2d77.11614269387935!3d28.632264102082033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e022b815ad2a593%3A0x73f00f43b0c5afd2!2sEcom%20Lifters!5e0!3m2!1sen!2sin!4v1755860349035!5m2!1sen!2sin" 
-                width="100%" 
-                height="450" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-lg shadow-lg"
-                title="EcomLifters Office Location"
-              />
+              <div className="relative w-full h-[450px] rounded-lg shadow-lg overflow-hidden">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.1809940569087!2d77.11614269387935!3d28.632264102082033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e022b815ad2a593%3A0x73f00f43b0c5afd2!2sEcom%20Lifters!5e0!3m2!1sen!2sin!4v1755860349035!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="450" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0 w-full h-full"
+                  title="EcomLifters Office Location"
+                  onError={(e) => {
+                    const target = e.target as HTMLIFrameElement;
+                    target.style.display = 'none';
+                    const fallback = document.createElement('div');
+                    fallback.className = 'absolute inset-0 w-full h-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-center p-4';
+                    fallback.innerHTML = `
+                      <div>
+                        <p class="text-lg font-semibold mb-2">EcomLifters Office</p>
+                        <p class="text-gray-600 dark:text-gray-300">1st Floor, J91, Block J, Beri Wala Bagh, Hari Nagar, New Delhi, Delhi, 110064</p>
+                      </div>
+                    `;
+                    target.parentNode?.appendChild(fallback);
+                  }}
+                />
+              </div>
             </div>
             
             <div className="text-center mt-6">

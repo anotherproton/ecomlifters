@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
         <meta
           name="viewport"
@@ -27,9 +27,9 @@ export default function RootLayout({
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body suppressHydrationWarning={true}>
+      <body className="font-primary bg-background text-text">
         <Provider>
-          <div className="instrument">
+          <div className="instrument root-layout" data-theme="style-1">
             <ScrollSmootherComponent />
             <ToolsComponent />
             <ScrollTop />

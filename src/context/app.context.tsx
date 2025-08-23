@@ -10,9 +10,9 @@ type Action =
   | { type: "setStopScrollTop"; value: boolean };
 
 const initialState = {
-  mode: "",
+  mode: "light",
   direction: "ltr",
-  layout: "",
+  layout: "full",
   switcherDir: "right",
   stopScrollTop: false,
 };

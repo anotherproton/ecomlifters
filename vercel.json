@@ -4,5 +4,16 @@
       "source": "/landing/:path*",
       "destination": "https://olive-moment-925909.framer.app/:path*"
     }
+  ],
+  "headers": [
+    {
+      "source": "/blogs/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=86400"
+        }
+      ]
+    }
   ]
 }

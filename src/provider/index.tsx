@@ -30,10 +30,17 @@ const ThemeWrapper = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const { theme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const { setMode } = useMode();
+  
   useEffect(() => {
+    // Set initial theme
+    if (!theme) {
+      setTheme('light');
+    }
+    // Update mode when theme changes
     setMode(theme as string);
-  }, []);
+  }, [theme, setTheme, setMode]);
+
   return <>{children}</>;
 };
